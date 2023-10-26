@@ -17,6 +17,6 @@ class Compagnie extends Model
     }
 
     public function compagnie(){
-        return $thsi->HasMany(Avion::class,'ref_compagnie');
+        return $this->HasMany(Avion::class,'ref_compagnie');
     }
 }

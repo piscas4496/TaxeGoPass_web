@@ -14,3 +14,5 @@
 Route::prefix('passagers')->group(function() {
     Route::get('/', 'PassagersController@index');
 });
+
+

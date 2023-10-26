@@ -51,7 +51,7 @@ class AdressesController extends Controller
             $adresses->save();  
         return $this->sendResponse($adresses, 'Adresse saved with success');
     } catch (\Exception $ex) {
-        return $this->sendErrorResponse('Fail to save adresse try to verify your input');
+        return $this->sendErrorResponse('Fail to save adresse try to verify your input'.$ex);
     }
     }
 
@@ -122,5 +122,8 @@ class AdressesController extends Controller
     {
         Adresse::find($id)->delete();
         return $this->sendResponse('The Adresse number $id has deleted');
+    }
+    public function getAdresse(){
+        return ('passagers.adresse');
     }
 }

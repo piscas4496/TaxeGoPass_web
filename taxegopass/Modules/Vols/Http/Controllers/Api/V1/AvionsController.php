@@ -20,7 +20,7 @@ class AvionsController extends Controller
      */
     public function index()
     {
-        $avions = Avion::with(['comppagnie'])->orderBy('id','desc')->paginate(5);
+        $avions = Avion::with(['compagnie'])->orderBy('id','desc')->paginate(5);
         return $this->sendData($avions);
     }
 
@@ -116,5 +116,9 @@ class AvionsController extends Controller
     {
         $avions = Avion::find($id)->delete();
         return $this->sendResponse('Passagers deleted success');
+    }
+    
+    public function getAvion(){
+        return view('vols.avion');
     }
 }

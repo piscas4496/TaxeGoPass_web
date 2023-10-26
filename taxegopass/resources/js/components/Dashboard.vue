@@ -1,451 +1,320 @@
 <template>
-    <div>
-     <div class="all-content-wrapper">    
-       
-        <div class="breadcome-area"> 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-wp">
-											<div class="breadcomb-icon">
-												<i class="icon nalika-home"></i>
-											</div>
-											<div class="breadcomb-ctn">
-												<h2>Dashboard Two</h2>
-												<p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
-											</div>
-										</div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-report">
-											<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="icon nalika-download"></i></button>
-										</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-         <div class="section-admin container-fluid res-mg-t-15">
-            <div class="row admin text-center">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn">
-                                <h4 class="text-left text-uppercase"><b>Orders</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="col-xs-3 mar-bot-15 text-left">
-                                        <label class="label bg-green">30% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin">10,000</h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 78%;" class="progress-bar bg-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>Tax Deduction</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-red">15% <i class="fa fa-level-down" aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin">5,000</h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 38%;" class="progress-bar progress-bar-danger bg-red"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>Revenue</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-blue">50% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin">$70,000</h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 60%;" class="progress-bar bg-blue"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
-                                <h4 class="text-left text-uppercase"><b>Yearly Sales</b></h4>
-                                <div class="row vertical-center-box vertical-center-box-tablet">
-                                    <div class="text-left col-xs-3 mar-bot-15">
-                                        <label class="label bg-purple">80% <i class="fa fa-level-up" aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="col-xs-9 cus-gh-hd-pro">
-                                        <h2 class="text-right no-margin">$100,000</h2>
-                                    </div>
-                                </div>
-                                <div class="progress progress-mini">
-                                    <div style="width: 60%;" class="progress-bar bg-purple"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="product-sales-area mg-tb-30">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="product-sales-chart">
-                            <div class="portlet-title">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="caption pro-sl-hd">
-                                            <span class="caption-subject text-uppercase"><b>Product Sales</b></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="actions graph-rp">
-                                            <div class="btn-group" data-toggle="buttons">
-                                                <label class="btn btn-grey active">
-													<input type="radio" name="options" class="toggle" id="option1">Today</label>
-                                                <label class="btn btn-grey">
-													<input type="radio" name="options" class="toggle" id="option2">Week</label>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card">
+                                            <div class="card-body p-3 d-flex gap-5">
+                                                <div class="flex-shrink-0">
+                                                    <div class="avatar-sm">
+                                                        <div class="avatar-title bg-body-secondary text-secondary rounded fs-3xl">
+                                                            <i class="bi bi-coin"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted mb-2">Paiements<span class="badge bg-success-subtle text-success"><i class="ti ti-arrow-up-right"></i>  {{ this.paiements }}</span></p>
+                                                    <h6 class="fw-semibold mb-0"><span class="counter-value" data-target="354620"> {{ this.paiements }}</span> <small class="text-muted fw-normal">Paiements</small></h6>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="curved-line-chart" class="flot-chart-sts flot-chart curved-chart-statistic"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="traffic-analysis-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="white-box tranffic-als-inner">
-                            <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-one"><i class="fa fa-sort-asc"></i> 18% last month</small> Site Traffic</h3>
-                            <div class="stats-row">
-                                <div class="stat-item">
-                                    <h6>Overall Growth</h6>
-                                    <b>80.40%</b></div>
-                                <div class="stat-item">
-                                    <h6>Montly</h6>
-                                    <b>15.40%</b></div>
-                                <div class="stat-item">
-                                    <h6>Day</h6>
-                                    <b>5.50%</b></div>
-                            </div>
-                            <div id="sparkline8"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="white-box tranffic-als-inner res-mg-t-30">
-                            <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-two"><i class="fa fa-sort-desc"></i> 18% last month</small>Site Traffic</h3>
-                            <div class="stats-row">
-                                <div class="stat-item">
-                                    <h6>Overall Growth</h6>
-                                    <b>80.40%</b></div>
-                                <div class="stat-item">
-                                    <h6>Montly</h6>
-                                    <b>15.40%</b></div>
-                                <div class="stat-item">
-                                    <h6>Day</h6>
-                                    <b>5.50%</b></div>
-                            </div>
-                            <div id="sparkline9"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="white-box tranffic-als-inner res-mg-t-30">
-                            <h3 class="box-title"><small class="pull-right m-t-10 last-month-sc cl-three"><i class="fa fa-sort-asc"></i> 18% last month</small>Site Traffic</h3>
-                            <div class="stats-row">
-                                <div class="stat-item">
-                                    <h6>Overall Growth</h6>
-                                    <b>80.40%</b></div>
-                                <div class="stat-item">
-                                    <h6>Montly</h6>
-                                    <b>15.40%</b></div>
-                                <div class="stat-item">
-                                    <h6>Day</h6>
-                                    <b>5.50%</b></div>
-                            </div>
-                            <div id="sparkline10"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product-new-list-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/5.png" alt=""></a>
-                            <div class="overlay-content">
-                                <a href="#">
-                                    <h2>$280</h2>
-                                </a>
-                                <a href="#" class="btn-small">Now</a>
-                                <div class="product-action">
-                                    <ul>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="#">
-                                    <h4>Princes Diamond</h4>
-                                </a>
-                                <div class="pro-rating">
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/5.png" alt=""></a>
-                            <div class="overlay-content">
-                                <a href="#">
-                                    <h2>$280</h2>
-                                </a>
-                                <a href="#" class="btn-small">Now</a>
-                                <div class="product-action">
-                                    <ul>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="#">
-                                    <h4>Princes Diamond</h4>
-                                </a>
-                                <div class="pro-rating">
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/5.png" alt=""></a>
-                            <div class="overlay-content">
-                                <a href="#">
-                                    <h2>$280</h2>
-                                </a>
-                                <a href="#" class="btn-small">Now</a>
-                                <div class="product-action">
-                                    <ul>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="#">
-                                    <h4>Princes Diamond</h4>
-                                </a>
-                                <div class="pro-rating">
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-new-trend mg-t-30">
-                            <a href="#"><img src="img/new-product/5.png" alt=""></a>
-                            <div class="overlay-content">
-                                <a href="#">
-                                    <h2>$280</h2>
-                                </a>
-                                <a href="#" class="btn-small">Now</a>
-                                <div class="product-action">
-                                    <ul>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li>
-                                            <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="#">
-                                    <h4>Princes Diamond</h4>
-                                </a>
-                                <div class="pro-rating">
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="fa fa-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star color"></i>
-                                    <i class="icon nalika-half-filled-rating-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-         <div class="product-sales-area mg-tb-30">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="product-sales-chart">
-                            <div class="portlet-title">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="caption pro-sl-hd">
-                                            <span class="caption-subject text-uppercase"><b>Order Statistic</b></span>
+                                    </div><!--end col-->
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body p-3 d-flex gap-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="avatar-sm">
+                                                        <div class="avatar-title bg-body-secondary text-secondary rounded fs-3xl">
+                                                            <i class=" ri ri-user-2-fill"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted mb-2">Total passagers <span class=" badge bg-success-subtle text-success"><i class=" ti ti-arrow-up-right"></i>{{ this.passagers }}</span></p>
+                                                    <h6 class=" fw-semibold mb-0"><span class="counter-value" data-target="245631"></span><small class="text-muted fw-normal">{{ this.passagers }}</small></h6>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="actions graph-rp">
-                                            <a href="#" class="btn btn-dark-blue btn-circle active tip-top" data-toggle="tooltip" title="Upload">
-													<i class="fa fa-cloud-download" aria-hidden="true"></i>
-												</a>
-                                            <a href="#" class="btn btn-dark btn-circle active tip-top" data-toggle="tooltip" title="Refresh">
-													<i class="fa fa-reply" aria-hidden="true"></i>
-												</a>
-                                            <a href="#" class="btn btn-blue-grey btn-circle active tip-top" data-toggle="tooltip" title="Delete">
-													<i class="fa fa-trash-o" aria-hidden="true"></i>
-												</a>
+                                    </div><!--end col-->
+                                    <div class="col-lg-3 col-sm-3">
+                                        <div class="card">
+                                            <div class="card-body p-3 d-flex gap-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="avatar-sm">
+                                                        <div class="avatar-title bg-body-secondary text-info rounded fs-3xl">
+                                                            <i class="ri ri-team-fill "></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted mb-2">Total Agents <span class="badge bg-danger-subtle text-danger"><i class="ti ti-arrow-down-right"></i> {{ this.agents }}</span></p>
+                                                    <h6 class="fw-semibold mb-0"><span class="counter-value" data-target="154832"></span><small class="text-muted fw-normal">{{ this.agents }}</small></h6>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="line-chart" class="flot-chart flot-chart-sts line-chart-statistic"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="author-area-pro">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="personal-info-wrap">
-                            <div class="widget-head-info-box">
-                                <div class="persoanl-widget-hd">
-                                    <h2>Jon Royita</h2>
-                                    <p>Founder of Uttara It Park</p>
-                                </div>
-                                <img src="img/notification/5.jpg" class="img-circle circle-border m-b-md" alt="profile">
-                                <div class="social-widget-result">
-                                    <span>100 Tweets</span> |
-                                    <span>350 Following</span> |
-                                    <span>610 Followers</span>
-                                </div>
-                            </div>
-                            <div class="widget-text-box">
-                                <h4>Jhon Royita</h4>
-                                <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.</p>
-                                <div class="text-right like-love-list">
-                                    <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                    <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="author-widgets-single res-mg-t-30">
-                            <div class="author-wiget-inner">
-                                <div class="perso-img">
-                                    <img src="img/notification/6.jpg" class="img-circle circle-border m-b-md" alt="profile">
-                                </div>
-                                <div class="persoanl-widget-hd persoanl1-widget-hd">
-                                    <h2>Fire Foxy</h2>
-                                    <p>Founder of Uttara It House</p>
-                                </div>
-                                <div class="social-widget-result social-widget1-result">
-                                    <span>100 Tweets</span> |
-                                    <span>350 Following</span> |
-                                    <span>610 Followers</span>
-                                </div>
-                            </div>
-                            <div class="widget-text-box">
-                                <h4>Fire Foxy</h4>
-                                <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.</p>
-                                <div class="text-right like-love-list">
-                                    <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                    <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="personal-info-wrap personal-info-ano res-mg-t-30">
-                            <div class="widget-head-info-box">
-                                <div class="persoanl-widget-hd">
-                                    <h2>Jon Royita</h2>
-                                    <p>Founder of Uttara It Park</p>
-                                </div>
-                                <img src="img/contact/2.jpg" class="img-circle circle-border m-b-md" alt="profile">
-                                <div class="social-widget-result">
-                                    <span>100 Tweets</span> |
-                                    <span>350 Following</span> |
-                                    <span>610 Followers</span>
-                                </div>
-                            </div>
-                            <div class="widget-text-box">
-                                <h4>Jhon Royita</h4>
-                                <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.</p>
-                                <div class="text-right like-love-list">
-                                    <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
-                                    <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-         <div class="calender-area mg-tb-30">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="calender-inner">
-                            <div id='calendar'></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-</template>
+                                    </div><!--end col-->
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="card">
+                                            <div class="card-body p-3 d-flex gap-3">
+                                                <div class="flex-shrink-0">
+                                                    <div class="avatar-sm">
+                                                        <div class="avatar-title bg-body-secondary text-body rounded fs-3xl">
+                                                            <i class="ti ti-coin "></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted mb-2">Total Frais <span class="badge bg-success-subtle text-success"><i class="ti ti-arrow-up-right"></i>{{ this.typefrais }}</span></p>
+                                                    <h6 class="fw-semibold mb-0"><span class="counter-value" data-target="489012"></span><small class="text-muted fw-normal">{{ this.typefrais }}</small></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+            
+    <div class="row"> 
+        
+                <div class="col-xl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0 pl-5">Passagers</h4>
+                                </div><!-- end card header -->
 
+                                <div class="card-body">
+                                    <canvas id="myChart1" width="600" height="600"></canvas>
+                                    <!-- <div id="myChart1" data-colors='["--tb-primary", "--tb-success", "--tb-warning", "--tb-danger", "--tb-dark", "--tb-info"]' class="apex-charts" dir="ltr"></div> -->
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+                        </div>
+        
+                        <div class="col-xl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Paiement Par date</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <Doughnut
+                             v-if="loaded"
+                            :data="chartData"
+                            :options="chartOptions"
+                            />
+                                    <!-- <div id="chartData" data-colors='["--tb-primary"]' class="apex-charts" ></div> -->
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+                        </div>
+                        
+                        <div class="col-xl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Vol disponibles</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <Doughnut
+                             v-if="loaded"
+                            :data="chartData"
+                            :options="chartOptions"
+                            />
+                                    <!-- <div id="chartData" data-colors='["--tb-primary"]' class="apex-charts" ></div> -->
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+                        </div>
+                        
+                        <div class="col-xl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Passagers servis</h4>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <Doughnut
+                             v-if="loaded"
+                            :data="chartData"
+                            :options="chartOptions"
+                            />
+                                    <!-- <div id="chartData" data-colors='["--tb-primary"]' class="apex-charts" ></div> -->
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+                        </div>
+                       
+</div>
+</template>
 <script>
+import axios from "axios";
+import { BarElement, CategoryScale, Chart as ChartJS, Legend, LinearScale, Title, Tooltip } from "chart.js";
+import Chart from "chart.js/auto";
+import { Doughnut } from "vue-chartjs";
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
+
+export default {
+    props: ["typechart"],
+    components: {
+        Doughnut,
+    },
+    data() {
+        return {
+            titre: "Statistique",
+            team: [],
+            paiements:"",
+            passagers:"",
+            agents:"",
+            typefrais:"",
+            // chart
+            loaded: false,
+           chartData: [],
+            etiquete: [],
+            valories: [],
+            valeur: [],
+            etiquet: [],
+
+            chartOptions: {
+                responsive: true,
+            },
+            // end chart
+
+        }
+
+    },
+
+    created() {
+        this.initialize()
+    },
+    async mounted() {
+        if (localStorage.getItem("auth") == 'true') {
+            localStorage.setItem("auth", 'ok')
+            location.reload();
+        }
+
+        this.loaded = false;
+
+        try {
+            const totales = await axios.get(`http://127.0.0.1:8000/api/v1/paiement/getChart`);
+            totales.data.map(
+                
+                (row) => (
+                    this.etiquete.push(row.datepaiement), this.valories.push(row.nombre)
+                    
+                )
+                
+            );
+
+            this.chartData = {
+                labels: this.etiquete,
+                datasets: [
+                    {
+                        label: "Paiements",
+                        data: this.valories,
+                        backgroundColor: ["#f87979", "blue"],
+                    },
+                ],
+            };
+            this.loaded = true;
+
+            console.log(this.loaded);
+        } catch (e) {
+            console.error(e);
+        }
+
+        try {
+
+            const totales_mvt = await axios.get(`http://127.0.0.1:8000/api/v1/paiement/getChart_mvt`);
+
+            totales_mvt.data.map(
+                (rows) => (
+                    this.etiquet.push(rows.datepaiement), this.valeur.push(rows.nombrepaiement),
+                    console.log(this.etiquet + ' et ' + this.valeur)
+                )
+            );
+            const ctx1 = document.getElementById("myChart1");
+            const data1 = {
+                labels: this.etiquet,
+                datasets: [
+                    {
+                        label: "Paiement par date",
+                        // data: [65, 59, 80, 81, 56, 55, 40],
+                        data: this.valeur,
+                        fill: false,
+                        borderColor: "rgb(75, 192, 192)",
+                        tension: 0.1,
+                    },
+                ],
+            };
+            const myChart1 = new Chart(ctx1, {
+                type: 'bar',
+                // type: "line",
+                data: data1,
+            });
+            myChart1;
+            // end chart js
+            console.log("Donnees charger");
+        } catch (e) {
+            console.error(e);
+        }
+        // end chart mouvement
+    },
+    methods: {
+      
+        async getpaiement() {
+      await axios.get(`http://127.0.0.1:8000/api/v1/paiement/paiementcount`).then((res) =>
+       {
+          this.paiements = res.data;
+          //console.log(this.paiements);
+       }
+      );
+    },
+    
+    getpassager() {
+        axios.get("http://127.0.0.1:8000/api/v1/paiement/passagercount")
+          .then((res) => {
+            this.passagers = res.data;
+             console.log(this.agents);
+          });
+        },
+        
+        getagent() {
+        axios.get("http://127.0.0.1:8000/api/v1/paiement/agentcount")
+          .then((res) => {
+            this.agents = res.data;
+             console.log(this.agents);
+          });
+        },
+        
+        gettypefrais() {
+        axios.get("http://127.0.0.1:8000/api/v1/paiement/typefraiscount")
+          .then((res) => {
+            this.typefrais = res.data;
+            // console.log(this.agents);
+          });
+        },
+    
+    FormatDate(date){
+      return new Date(date).toLocaleDateString()  
+    },
+    FormatHeure(date){
+        return new Date(date).toLocaleTimeString()
+    },
+    initialize() {
+            this.getpaiement();
+            this. getpassager();
+             this. getagent();
+             this.gettypefrais();
+        },
+
+    },
+}
 </script>
+<style scoped>
+#views {
+    max-height: 470px;
+    overflow: scroll;
+}
+
+#views2 {
+    max-height: 250px;
+    overflow: scroll;
+}
+</style>

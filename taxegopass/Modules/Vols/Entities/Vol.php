@@ -4,6 +4,7 @@ namespace Modules\Vols\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\Passagers\Entities\Passager;
 
 class Vol extends Model
 {
@@ -19,7 +20,7 @@ class Vol extends Model
     public function avion(){
         return $this->belongsTo(Avion::class,'ref_avion');
     }
-    public function agent(){
-        return $this->HasMany(Modules\Paiements\Entities\Paiement::class,'ref_vol');
+    public function vol(){
+        return $this->HasMany(Passager::class,'ref_vol');
     }
 }

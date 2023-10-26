@@ -20,6 +20,8 @@ return new class extends Migration
             $table->foreignId('ref_passager')->constrained();
             $table->foreignId('ref_agent')->constrained();
             $table->foreignId('ref_typefrais')->constrained();
+            $table->Integer('paiement_qrcode');
+            $table->boolval('statutpaie');
             $table->timestamps();
             $table->softDeletes();
         });

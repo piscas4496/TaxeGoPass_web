@@ -22,9 +22,11 @@ Route::group(['as' => 'taxegopass::api.', 'prefix' => 'passager'], function () {
     Route::controller(PassagersController::class)->group(function () {
         Route::get('/passager', 'index')->name('passager.list');
         Route::post('/passager', 'store')->name('passager.store');
-        Route::get('/passagert/{id}', 'edit')->name('passager.edit');
-        Route::post('/passager/{id}', 'update')->name('passager.update');
+        Route::get('/passager/{id}', 'edit')->name('passager.edit');
+        Route::put('/passager/{id}', 'update')->name('passager.update');
         Route::delete('/passager/{id}', 'destroy')->name('passager.destroy');
+        Route::get('/pdf_allpassager', 'pdf_allpassager')->name('pdf_allpassager');
+        
     });
 
     Route::controller(AdressesController::class)->group(function () {

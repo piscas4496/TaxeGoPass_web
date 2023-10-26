@@ -3,6 +3,7 @@
 namespace Modules\Agents\Entities;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\Paiements\Entities\Paiement;
 
 
 class Agent extends Model
@@ -18,6 +19,6 @@ class Agent extends Model
 
     public function paiement()
     {
-        return $this->hasMany(Modules\Paiements\Entities\Paiements::class,'ref_agent');
+        return $this->hasMany(Paiement::class,'ref_agent');
     }
 }

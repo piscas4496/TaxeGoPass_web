@@ -14,12 +14,12 @@ class PassagersRequest extends FormRequest
     public function rules()
     {
         return [
-           'nomspass'=>'required',
-           'genrepass'=>'required',
-           'telephone'=>'required',
-           'emailpass'=>'required',
-           'ref_adresse'=>'required',
-           'ref_vol'=>'required'
+        //    'nomspass'=>'required',
+        //    'genrepass'=>'required',
+        //    'telephone'=>'required',
+        //    'emailpass'=>'required',
+        //    'adresse'=>'required',
+        //    'ref_vol'=>'required'
         ];
     }
 

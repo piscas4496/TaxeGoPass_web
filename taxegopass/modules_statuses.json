@@ -2,5 +2,6 @@
     "Agents": true,
     "Passagers": true,
     "Vols": true,
-    "Paiements": true
+    "Paiements": true,
+    "Auth": true
 }

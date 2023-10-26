@@ -1,361 +1,362 @@
 <template>
-  <div class="all-content-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="logo-pro">
-            <a href="index.html"
-              ><img class="main-logo" src="img/logo/logo.png" alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div  class="product-status mg-b-50">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="product-status-wrap">
-            <h4>Agents List</h4>
-            <div  class="add-product">
-              <div class="shadow-inner mg-tb-30">
-                <a 
-                  class="Information Information-color mg-b-30"
-                  href="#"
-                  data-toggle="modal"
-                  data-target="#Addagent"
-                  >Add agent</a
-                >
-              </div>
-            </div>
-            <div
-              id="Addagent"
-              class=" modal modal-edu-general fullwidth-popup-InformationproModal PrimaryModal-bgcolor fade"
-              role="dialog"
-            >
-              <div  class="modal-dialog">
-                <!-- <div class="modal-content"> -->
-                  <div class="modal-close-area modal-close-df"></div>
-                  <div  class="modal-body">
+  <div class="main-content">
+    <div class="page-content">
+      <div class="container-fluid">
+          <div class="chat-wrapper d-lg-flex gap-3 gap-lg-4  p-xl-1 pt-md-5 p-lg-1">         
+              <div class="todo-content w-100 pb-0">
+                  <div class="row mb-4">
+                      <div class="col-auto order-1 d-block d-lg-none">
+                          <button type="button" class="btn btn-subtle-success btn-icon file-menu-btn">
+                              <i class="ri-menu-2-fill align-bottom"></i>
+                          </button>
+                      </div>
+                      <div class="col-sm order-3 order-sm-2 mt-3 mt-sm-0">
+                          <h5 class="fw-semibold mb-2">RVA Admin <span class="badge bg-primary align-bottom ms-2">v1.0.0</span></h5>
+                          <p class="text-decoration-underline d-inline-block mb-0 text-muted"><a href="#!" class="text-reset"> Agent List</a></p>
+                      </div>
+                      <div class="col-auto order-2 order-sm-3 ms-auto">
+                          <div class="hstack gap-2">
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                  <button class="btn btn-icon fw-semibold btn-secondary"><i class="ti ti-arrow-back-up"></i></button>
+                                  <button class="btn btn-icon fw-semibold btn-success"><i class="ti ti-arrow-forward-up"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="p-3 bg-light rounded mb-4">
+                      <div class="row g-2">
+                       
+                          <div class="col-lg-auto  card  " >
+                            <a class="form-control" data-choices data-choices-search-false @click="printallagent" name="choices-select-status" id="choices-select-status">
+                              <i class="ph-printer-fill"></i></a>
+                          </div>
+                          
+                          <div class="col-lg-auto">
+                              <select class="form-control"  data-choices data-choices-search-false name="choices-select-sortlist" id="choices-select-sortlist">
+                                  <option value="">Sort</option>
+                                  <option value="By ID">By ID</option>
+                                  <option value="By Name">By Name</option>
+                              </select>
+                          </div>
+                          <div class="col-lg">
+                              <div class="search-box">
+                                  <input type="text" id="searchTaskList" class="form-control search" placeholder="Search task name">
+                                  <i class="ri-search-line search-icon"></i>
+                              </div>
+                          </div>
+                          <div class="col-lg-auto">
+                              <button class="btn btn-primary createTask" type="button" data-bs-toggle="modal" data-bs-target="#Addagent">
+                                  <i class="ri-add-fill align-bottom"></i> Add Passager
+                              </button>
+                            
+      <!-- removeFileItemModal -->
+      <div id="Addagent" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-removetodomodal"></button>
+                    </div>
+                  <div class="modal-body">
                     <form>
                     <br><br>
-                   
-                      <div id="text-form" class="col-md-12 2">
-                        <h3>Add  Agent</h3>
-                        <div class="form-group">
-                          <label class="control-label">Noms</label>
-                          <input
-                            type="text"
-                            v-model="model.addAgent.nomsag"
-                            class="form-control"
-                          />
-                        </div>
-                        <div  class="form-group">
-                          <label class="control-label">Genre</label>
-                          <input
-                            type="text"
-                            v-model="model.addAgent.genreag"
-                            class="form-control"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="control-label">Date de naissance</label>
-                          <input
-                            type="date"
-                            v-model="model.addAgent.datenaissag"
-                            class="form-control"
-                          />
-                        </div>
 
-                        <div  class="form-group">
-                          <label class="control-label">Telephone</label>
-                          <input
-                            type="text"
-                            v-model="model.addAgent.mobile"
-                            class="form-control"
-                          />
-                        </div>
-                        <div  class="form-group">
-                          <label class="control-label" >Email</label>
-                          <input
-                            type="text"
-                            v-model="model.addAgent.emailag"
-                            class="form-control"
-                          />
-                        </div>
-                        <div  class="form-group">
-                          <label class="control-label" >Password</label>
-                          <input
-                            type="password"
-                            v-model="model.addAgent.passwordag"
-                            class="form-control"
-                          />
-                        </div>
-                      <div  class="modal-footer footer-modal-admin info-md">
-                        <a
-                          data-dismiss="modal"
-                          class="col-xs-3 info info-danger"
-                          href="#"
-                          >Cancel</a
-                        >
-                        <a class="col-xs-0 btn btn-Secondary" @click="saveagent"
-                          >Process</a
-                        >
+                    <div id="text-form" class="col-md-12 2">
+                      <h3>Add Agent</h3>
+                      <div class="form-group">
+                        <label class="control-label">Noms</label>
+                        <input type="text" v-model="model.modelAgent.nomsag" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                                  <label for="genre" class="control-label">Genre</label>
+                                   <select id="" name="sexe" v-model="model.modelAgent.genreag"
+                                      class="form-control">
+                                   <option  value="Masculin">Masculin</option>
+                                  <option  value="Feminin">Feminin</option>
+                                </select>
+                             </div>
+                      <div class="form-group">
+                        <label class="control-label">Date de naissance</label>
+                        <input type="date" v-model="model.modelAgent.datenaissag" class="form-control" />
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label">Telephone</label>
+                        <input type="text" v-model="model.modelAgent.mobile" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <input type="text" v-model="model.modelAgent.emailag" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <input type="password" v-model="model.modelAgent.passwordag" class="form-control" />
+                      </div>
+                      <div class="modal-footer footer-modal-admin info-md">
+                        <a data-dismiss="modal" class="col-xs-3 info info-danger" href="#">Cancel</a>
+                        <a class="col-xs-0 btn btn-Secondary" @click="saveagent">Process</a>
                       </div>
                     </div>
-                    </form>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-            <table>
-              <thead>
-                <th>Numero</th>
-                <th>Noms</th>
-                <th>GEnre</th>
-                <th>Age</th>
-                <th>Telephone</th>
-                <th>email</th>
-                <th>Actions</th>
-              </thead>
-
-              <tbody v-if="this.agents.length > 0">
+                  </form>
+                  
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!--end delete modal -->
+    </div>                        
+    </div>
+    </div>
+    </div>
+                  
+          
+                  <div class="todo-content position-relative px-4 mx-n4" id="todo-content">
+                      <div id="elmLoader">
+                          <div class=" text-primary avatar-sm" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                          </div>
+                      </div>
+                      <div class="todo-task" id="todo-task">
+                          <div class="">
+                              <table class="table align-middle position-relative table-nowrap">
+                                  <thead class="table-active">
+                                    <tr>                      
+                                     <th scope="col" class="sort cursor-pointer" data-sort="invoice_id">Numero</th>
+                                      <th scope="col" class="sort cursor-pointer" data-sort="customer_name">Nom </th>
+                                      <th scope="col" class="sort cursor-pointer" data-sort="email">Genre</th>
+                                      <th scope="col" class="sort cursor-pointer" data-sort="create_date">Date de naissance</th>
+                                      <th scope="col" class="sort cursor-pointer" data-sort="due_date">Telephone</th>
+                                       <th scope="col" class="sort cursor-pointer" data-sort="amount">Email</th>
+                                       <th scope="col">Action</th>
+                                      </tr>
+                                      
+                                  </thead>
+          
+                                  <tbody v-if="this.agents.length > 0">
                 <tr v-for="(agent, index) in this.agents" :key="index">
                   <td>{{ agent.id }}</td>
                   <td>{{ agent.nomsag }}</td>
                   <td>{{ agent.genreag }}</td>
-                  <td>{{ agent.datena }}</td>
+                  <td>{{ agent.datenaissag }}</td>
                   <td>{{ agent.mobile }}</td>
                   <td>{{ agent.emailag }}</td>
-                  <td>
-                    <button
-                      data-toggle="modal"
-                      data-target="#EditAgent"
-                      title="Edit"
-                      @click="updateagents(agent)"
-                      class="pd-setting-ed"
-                    >
-                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    </button>
+                     
+                      <td>           
+     <button class="btn btn-subtle btn-icon btn-sm remove-item-btn" @click="getoneagent(agent.id)" data-bs-target="#updateagent" data-bs-toggle="modal">
+      <i class="ph-pencil"></i></button>
+      <!-- removeFileItemModal -->
+      <div id="updateagent" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-removetodomodal"></button>
+                    </div>
+                  <div class="modal-body">
+                    <form>
+                    <br><br>
 
-                    <div
-                      id="EditAgent"
-                      class="modal modal-edu-general fullwidth-popup-InformationproModal PrimaryModal-bgcolor fade"
-                      role="dialog"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-close-area modal-close-df"></div>
-                          <div class="modal-body">
-                            <form >
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label class="control-label" for="noms"
-                                    >Noms</label
-                                  >
-                                  <input
-                                    type="text"
-                                   v-model="model.addAgent.nomsag"
-                                    class="form-control"
-                                  />
-                                </div>
-                                <div class="form-group">
-                                  <label class="control-label" for="genre"
-                                    >Genre</label
-                                  >
-                                  <input
-                                    type="text"
-                                  v-model="model.addAgent.genreag"
-                                    class="form-control"
-                                  />
-                                </div>
-                                <div class="form-group">
-                                  <label class="control-label" for="datenaiss"
-                                    >Date de naissance</label
-                                  >
-                                  <input
-                                    type="date"
-                                  v-model="model.addAgent.datenaissag"
-                                    class="form-control"
-                                  />
-                                </div>
+                    <div id="text-form" class="col-md-12 2">
+                      <h3>Add Agent</h3>
+                      <div class="form-group">
+                        <label class="control-label">Noms</label>
+                        <input type="text" v-model="model.modelAgent.nomsag" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                                  <label for="genre" class="control-label">Genre</label>
+                                   <select id="" name="sexe" v-model="model.modelAgent.genreag"
+                                      class="form-control">
+                                   <option  value="Masculin">Masculin</option>
+                                  <option  value="Feminin">Feminin</option>
+                                </select>
+                             </div>
+                      <div class="form-group">
+                        <label class="control-label">Date de naissance</label>
+                        <input type="date" v-model="model.modelAgent.datenaissag" class="form-control" />
+                      </div>
 
-                                <div class="form-group">
-                                  <label class="control-label" for="noms"
-                                    >Telephone</label
-                                  >
-                                  <input
-                                    type="text"
-                                    v-model="model.addAgent.mobile"
-                                    class="form-control"
-                                  />
-                                </div>
-                                <div class="form-group">
-                                  <label class="control-label" for="email"
-                                    >Email</label
-                                  >
-                                  <input
-                                    type="text"
-                                    v-model="model.addAgent.emailag"
-                                    class="form-control"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="modal-footer footer-modal-admin info-md"
-                              >
-                                <a
-                                  data-dismiss="modal"
-                                  class="col-xs-3 info info-danger"
-                                  href="#"
-                                  >Cancel</a
-                                >
-                                <a class="col-xs-0 btn btn-success" 
-                                  >Update</a
-                                >
-                              </div>
-                            </form>
-                          </div>
-                        </div>
+                      <div class="form-group">
+                        <label class="control-label">Telephone</label>
+                        <input type="text" v-model="model.modelAgent.mobile" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <input type="text" v-model="model.modelAgent.emailag" class="form-control" />
+                      </div>
+                      <div class="modal-footer footer-modal-admin info-md">
+                        <a data-dismiss="modal" class="col-xs-3 info info-danger" href="#">Cancel</a>
+                        <button type="button" class="btn w-sm btn-danger" data-bs-dismiss="modal" @click="update" id="remove-todoitem">
+                         Update
+                        </button>
                       </div>
                     </div>
-                    <button
-                      data-toggle="tooltip"
-                      data-target="#Deleteagent"
-                      title="Trash"
-                     @click="deleteagents(agent.id)" class="pd-setting-ed alert alrt-danger"
-                    >
-                      <i class="fa fa-trash-o" aria-hidden="true"></i>
-                    </button>
-                  </td> 
-                </tr>
-              </tbody>
-              <tbody v-else>
-                <tr>
-                  <td colspan="6">Loading...</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="custom-pagination">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#">Previous</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </div>
+                  </form>
+                  
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!--end delete modal -->
+    </div> 
+    <a class="btn btn-subtle btn-icon btn-sm remove-item-btn" @click="deleteagent(agent.id)" data-bs-target="" data-bs-toggle="">
+       <i class="ph-trash"></i></a>
+      </td>
+     </tr>                             
+                        
+                      </tbody>
+                    </table> 
+                        </div>
+                      </div>
+                   
+                      <div class="" id="" style="display: none;">
+                          <i class="ti ti-search fs-2 text-success"></i>
+                          <h6 class="mt-3">Sorry! No Result Found</h6>
+                      </div>
+                  </div>
+                  
+          
+              </div>
           </div>
-        </div>
+  
       </div>
-    </div>
+      <!-- container-fluid -->
   </div>
-</template>
-
+  </div>
+  <!-- End Page-content -->
+    </template>
 <script lang="ts">
 import axios from "axios";
 
+import { createToaster } from "@meforma/vue-toaster";
+const toaster = createToaster({ /* options */ });
 export default {
-    name: "agents",
-    names:'agentcreate',
-    setup(){
-        
-    },
-    data() {
-        return {
-            agents: [],
-            model: {
-                addAgent: {
-                    nomsag: '',
-                    genreag: '',
-                    datenaissag: '',
-                    mobile: '',
-                    emailag: '',
-                    passwordag: ''
+  name: "agents",
+  names: 'agentcreate',
+  setup() {
 
-                }
-            }
-            
-        };
-    },
-    mounted() {
-        //console.log ('helo guys')
-        this.getAgents();
+  },
+  data() {
+    return {
+      agents: [],
+      model: {
+        modelAgent: {
+          id:'',
+          nomsag: '',
+          genreag: '',
+          datenaissag: '',
+          mobile: '',
+          emailag: '',
+          passwordag: ''
+
+        }
+      },
+
+    };
+  },
+  mounted() {
+    //console.log ('helo guys')
+    this.getAgents();
+    //this.agentId(this.$route.params.id);
+
+  },
+  methods: {
+    //Shoawing all agent in table
+    getAgents() {
+      axios.get("http://127.0.0.1:8000/api/v1/agent/agent")
+        .then((res) => {
+          this.agents = res.data.data;
+          // console.log(this.agents);
+        });
       
     },
-    methods: {
-        getAgents() {
-            axios.get("http://127.0.0.1:8000/api/v1/agent/agent")
-                .then((res) => {
-                    this.agents = res.data.data;
-                    console.log(this.agents);
-                });
-                },
-                saveagent(){
-                    axios.post("http://127.0.0.1:8000/api/v1/agent/agent", this.model.addAgent)
-                        .then(res => {
-                            console.log(res.data)
-                            alert(res.data.message)
-                            this.model.addAgent = {
-                                nomsag: '',
-                                genreag: '',
-                                datenaissag: '',
-                                mobile: '',
-                                emailag: '',
-                                passwordag: ''
-                            }
-             })
-             .catch(function (error){
-                if(error.response){
-                if(error.response.status==422){
-                   // this.errorList=error.response.data.errors;
-                }
-                console.log(error.response.data);
-                console.log(error.response.status);
-                console.log(error.response.header);
-            }else if(error.response){
-                console.log(error.request);
-            }else{
-                console.log('error',error.message);
+    printallagent() 
+    {
+      window.open(`http://127.0.0.1:8000/api/v1/agent/pdf_allagent`);
+    },
+    //Ading agent in data base
+    saveagent() {
+      axios.post("http://127.0.0.1:8000/api/v1/agent/agent", this.model.modelAgent)
+        .then(res => {
+          //console.log(res.data)
+          alert(res.data.message)
+          this.model.modelAgent = {
+            nomsag: '',
+            genreag: '',
+            datenaissag: '',
+            mobile: '',
+            emailag: '',
+            passwordag: ''
+          }
+          this.getAgents();
+        })
+        .catch(function (error) {
+          if (error.response) {
+            if (error.response.status == 422) {
+              // this.errorList=error.response.data.errors;
             }
-             })  
-            },
             
-            deleteagents(id){
-                if(confirm("Do you want to delete this Agent be cerefful cause he will deespeer inside database")){
-                    // console.log(id)
-                    axios.delete("http://127.0.0.1:8000/api/v1/agent/agent/${id}").then(res=>{
-                        alert(res.data.data.message),
-                       this.getAgents();
-                    });
-                }
-                
-           
-               
-            },
-            updateagents(agent){
-                console.log(agent);
-                this.model.addAgent.nomsag=agent.nomsag;
-                this.model.addAgent.genreag=agent.genreag;
-                this.model.addAgent.datenaissag=agent.datenaissag;
-                this.model.addAgent.mobile=agent.mobile;
-                this.model.addAgent.emailag=agent.emailag;
-                // this.model.addAgent.passwordag=agent.passwordag;
-          
-            }
-        },
-    
-};
+          } else if (error.response) {
+            console.log(error.request);
+          } else {
+            // console.log('error',error.message);
+          }
+        });
+    },
 
+    async getoneagent(idagent) {
+      await axios
+        .get(`http://127.0.0.1:8000/api/v1/agent/agent/${idagent}`)
+        .then((response) => {
+          const { id, nomsag, genreag,datenaissag,mobile,emailag } = response.data;
+          this.model.modelAgent.id = id;
+          this.model.modelAgent.nomsag = nomsag;
+          this.model.modelAgent.genreag = genreag;
+          this.model.modelAgent.datenaissag = datenaissag;
+          this.model.modelAgent.mobile =mobile;
+            this.model.modelAgent.emailag =emailag;
+          console.warn(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+    update(idagent) {
+      axios
+        .put(`http://127.0.0.1:8000/api/v1/agent/agent/${this.model.modelAgent.id}`,
+          {
+            nomsag: this.model.modelAgent.nomsag,
+            genreag: this.model.modelAgent.genreag,
+            datenaissag: this.model.modelAgent.datenaissag,
+            mobile: this.model.modelAgent.mobile,
+            emailag: this.model.modelAgent.emailag,
+          })
+        .then((response) => {
+          console.log("data updated successfully" + response);
+          this.getAgents();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+
+    /*
+     *
+     *DELETEING AGENT FROM ID
+     *
+     */
+    /**
+     *
+     * @param {string} id
+     */
+    deleteagent(id) {
+      if (confirm("Are you sure to delete this agent ?")) {
+        axios
+          .delete(`http://127.0.0.1:8000/api/v1/agent/agent/${id}`)
+          .then((response) => {
+            this.getAgents();
+            toaster.success(statusbar)
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    },
+  }
+};
 </script>

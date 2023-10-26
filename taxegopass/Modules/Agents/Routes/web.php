@@ -11,6 +11,6 @@
 |
 */
 
-Route::prefix('agents')->group(function() {
-    Route::get('/', 'AgentsController@index');
+Route::prefix('agents')->middleware('auth')->group(function() {
+Route::get('/', 'AgentsController@index');
 });

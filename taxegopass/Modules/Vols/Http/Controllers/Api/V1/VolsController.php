@@ -115,4 +115,29 @@ class VolsController extends Controller
         Vol::find($id)->delete();
         return $this->sendResponse('Passagers deleted success');
     }
+    public function getVol(){
+        return view('vols.vol');
+    }
+    //contolle de checkbox 
+    
+    public function saveStatutTotrue($id){
+        $statuttrue=Vol::find($id);
+        try {
+            $statuttrue->statut=true;
+            $statuttrue->save();
+        } catch (\Throwable $th) {
+           echo $th."echec de changement de stutut";
+        }
+        
+    }
+    public function saveStatutTofalse($id){
+        $statutfalse=Vol::find($id);
+        try {
+            $statutfalse->statut=false;
+            $statutfalse->save();
+        } catch (\Throwable $th) {
+           echo $th."echec de changement de stutut";
+        }
+        
+    }
 }

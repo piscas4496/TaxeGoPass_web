@@ -20,7 +20,7 @@ class CompagniesController extends Controller
     public function index()
     {
         $compagnies = Compagnie::orderBy('id','desc')->paginate(5);
-        return $this->sendData($avions);
+        return $this->sendData($compagnies);
     }
 
     /**
@@ -103,5 +103,9 @@ class CompagniesController extends Controller
     {
         $compagnies = Compagnie::find($id)->delete();
         return $this->sendResponse('Compagnie deleted successfully');
+    }
+    
+    public function getCompagnie(){
+        return view('vols.compagnie');
     }
 }

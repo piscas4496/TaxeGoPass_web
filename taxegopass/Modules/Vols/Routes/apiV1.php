@@ -25,6 +25,8 @@ Route::group(['as' => 'taxegopass::api.', 'prefix' => 'vol'], function () {
         Route::get('/vol/{id}', 'edit')->name('vol.edit');
         Route::post('/vol/{id}', 'update')->name('vol.update');
         Route::delete('/vol/{id}', 'destroy')->name('vol.destroy');
+        Route::post('/saveStatutTotrue/{id}', 'saveStatutTotrue')->name('saveStatutTotrue.edit');
+        Route::post('/saveStatutTofalse/{id}', 'saveStatutTofalse')->name('saveStatutTofalse.edit');
     });
 
     Route::controller(AvionsController::class)->group(function () {

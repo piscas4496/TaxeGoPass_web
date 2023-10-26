@@ -109,4 +109,8 @@ class TypeFraisController extends Controller
         TypesFrais::find($id)->delete();
         return $this->sendResponse('Type frais deleted success');
     }
+ 
+    public function getTypePaiement(){
+        return ('paiements.typepaiement');
+    }
 }

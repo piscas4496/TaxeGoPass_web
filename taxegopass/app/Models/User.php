@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -42,4 +42,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+public static function getParsedemail(string $key)
+    {
+        $phone = str_replace(' ', '', str_replace('+', '', request($key)));
+
+        return substr($phone, -9);
+    }
+
+    public static function findForSanctum(string $identifier, array $selects = ['*'])
+    {
+        return self::select($selects)->where('email', $identifier)
+        ->first();
+    }
+    
+    
+   
 }

@@ -18,7 +18,6 @@ class AgentRequest extends FormRequest
             'genreag'=>'required',
             'datenaissag'=>'required',
             'mobile'=>'required',
-            'passwordag'=>'required'
         ];
     }
 
